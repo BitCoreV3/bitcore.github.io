@@ -172,13 +172,17 @@
    <hr>
 
     <div style="text-align: center">
-        
-    
-    <div style="text-align: center">
-        <h1><font color="yellow"><b>Buy BTX</b></font></h1>
-        <p><iframe width="380" height="1080" frameBorder="1" scrolling="no" src="https://pancakeswap.finance/swap?outputCurrency=0xB7df96d41905F27437A72Bcd9D7dAfEbF087cd21"></iframe></p>
-        <p>In my wallet: <span id="myTokens"></span> <span class="tokenSymbol">BTX</span></p>
-    </div>
+                <h1>Buy BTX </h1>
+                <p>1 <span class="tokenSymbol">BTX</span> = <span class="price"></span> <span class="paytokenSymbol">USDT</span></p>
+                <p><input type="number" id="buyAmount" value="0" min="0"> <span class="paytokenSymbol">USDT</span></p>
+                <p>You get: <span id="get">0</span> <span class="tokenSymbol">BTX</span></p>
+                <p>
+                    <button id="apprBtn" style="text-align: center">(1/2) Approve <span class="paytokenSymbol">USDT</span></button>
+                    <button id="buyBtn" style="text-align: center; display: none">(2/2) Pay <span class="paytokenSymbol">USDT</span></button>
+                </p>
+                <p id="lowBalance" class="err" style="display: none">Not enough <span class="paytokenSymbol">USDT</span> in your wallet!</p>
+                <p>In my wallet: <span id="myTokens"></span> <span class="tokenSymbol">BTX</span> | <span id="myPayTokens"></span> <span class="paytokenSymbol">USDT</span></p>
+            </div>
     <hr>
     
     <div style="text-align: center">
